@@ -43,25 +43,9 @@
 
   function Row(coffeeOrder) {
 
-    var colorCode = "#ffffff";
-
-    if (coffeeOrder.flavor == "caramel") {
-      colorCode = "#73F3E6";
-    }
-
-    if (coffeeOrder.flavor == "almond") {
-      colorCode = "#F8BF8C";
-    }
-    if (coffeeOrder.flavor == "mocha") {
-      colorCode = "#B695BE";
-    }
-
     var $div = $("<div></div>", {
       "data-coffee-order": "checkbox",
       "class": "checkbox"
-    });
-    $div.css({
-      "background-color": colorCode
     });
     var $label = $("<label></label>");
 
