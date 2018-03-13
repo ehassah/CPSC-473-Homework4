@@ -26,4 +26,8 @@
 
   formHandler.addInputHandler(Validation.isCompanyEmail);
 
+  remoteDS.getAll(function(coffeeOrders){
+    checkList.addRows(coffeeOrders);
+  });
+
 })(window);

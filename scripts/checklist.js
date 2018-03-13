@@ -41,6 +41,13 @@
       .remove();
   };
 
+  CheckList.prototype.addRows = function(coffeeOrder) {
+    // var myThis = this;
+    coffeeOrder.forEach(function(coffeeOrder) {
+      this.addRow(coffeeOrder);
+    }.bind(this));
+  };
+
   function Row(coffeeOrder) {
 
     var $div = $("<div></div>", {
