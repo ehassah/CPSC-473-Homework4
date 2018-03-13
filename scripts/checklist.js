@@ -70,5 +70,6 @@
     this.$element = $div;
   }
 
-  App.CheckList = CheckList; window.App = App;
+  App.CheckList = CheckList;
+  window.App = App;
 })(window);

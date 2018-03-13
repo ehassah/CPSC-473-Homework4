@@ -11,7 +11,7 @@
   var FormHandler = App.FormHandler;
   var Validation = App.Validation;
   var CheckList = App.CheckList;
-  var remoteDS =  new RemoteDataStore(SERVER_URL);
+  var remoteDS = new RemoteDataStore(SERVER_URL);
 
   var myTruck = new Truck("ncc-1701", remoteDS);
   window.myTruck = myTruck;
